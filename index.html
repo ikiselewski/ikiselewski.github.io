@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ilya Kiselewski — Backend Engineer (Go / Python)</title>
+<meta name="description" content="Ilya Kiselewski — backend engineer (Go / Python) with experience in highload and distributed systems. Moscow / remote.">
+<meta property="og:type" content="website"><meta property="og:title" content="Ilya Kiselewski — Backend Engineer · Go / Python">
+<meta property="og:description" content="Highload marketplaces, distributed S3-compatible storage, async Python. Open to middle+ backend roles.">
+<meta property="og:url" content="https://ikiselewskii.github.io/"><meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#">IK</a>
+<div class="links"><a href="#about" data-i18n="n_about">About</a><a href="#exp" data-i18n="n_exp">Experience</a><a href="#skills" data-i18n="n_skills">Skills</a><a href="#projects" data-i18n="n_proj">Projects</a><a href="#contact" data-i18n="n_contact">Contact</a></div>
+<button id="lang" aria-label="Switch language">RU</button></div></nav>
+<main class="wrap">
+<header>
+<h1 data-i18n="name">Ilya Kiselewski</h1>
+<p class="role">Backend Engineer · Go / Python</p>
+<p class="pitch" data-i18n="pitch">I build highload backends and distributed systems — from a marketplace handling tens of thousands of RPS to raft-based S3-compatible storage.</p>
+<div class="cta">
+<!-- TODO: set Telegram username -->
+<a class="btn pri" href="https://t.me/" data-i18n="c_tg">Telegram</a>
+<a class="btn" href="mailto:ikiselewsk@yandex.ru">Email</a>
+<a class="btn" href="https://github.com/ikiselewskii">GitHub</a>
+<a class="btn" href="https://linkedin.com/in/ilya-kiselewski">LinkedIn</a>
+<a class="btn" href="cv.pdf" download data-i18n="c_cv">Download CV</a>
+</div></header>
+
+<section id="about"><h2 data-i18n="n_about">About</h2>
+<p data-i18n="about">Backend engineer working mainly in Go and Python. At Lofty I built a marketplace MVP from scratch in two months and scaled it into a highload system with event sourcing and a dozen microservices; at Cloud.ru I worked on an S3-compatible distributed storage. Currently a master's student in AI &amp; NLP at NUST MISiS. Based in Moscow · English C2 · Spanish B1.</p></section>
+
+<section id="exp"><h2 data-i18n="n_exp">Experience</h2>
+<div class="job"><div class="jh"><h3>Software Engineer · Lofty</h3><span data-i18n="d1">Aug 2024 – Oct 2025</span></div><ul>
+<li data-i18n="l1">Built a B2C marketplace MVP for e-goods (Steam keys, in-game currencies) from scratch in Go with MongoDB and Redis in two months on a tight schedule.</li>
+<li data-i18n="l2">Scaled it into a highload system handling tens of thousands of RPS with Temporal, DragonflyDB, PostgreSQL, OpenSearch and Redpanda; implemented event sourcing, reliable business workflows and a dozen microservices.</li>
+<li data-i18n="l3">Made key decisions in architecture discussions on product and performance; groomed feature requests with the Product Owner.</li>
+<li data-i18n="l4">Maintained legacy projects and moved dockerized applications to Kubernetes.</li></ul></div>
+<div class="job"><div class="jh"><h3>Software Engineer · Cloud.ru</h3><span data-i18n="d2">Apr 2023 – Dec 2023</span></div><ul>
+<li data-i18n="c1">Developed an HTTP request logging aggregation system for an S3-compatible distributed storage written in Go.</li>
+<li data-i18n="c2">Used gRPC for data exchange between services in a raft-based distributed system.</li>
+<li data-i18n="c3">Implemented S3 API HTTP handlers using test-driven development.</li>
+<li data-i18n="c4">Fixed API response inconsistencies to make the system compliant with the S3 specification.</li></ul></div>
+<div class="job"><div class="jh"><h3>Backend Developer · Herbarium Games</h3><span data-i18n="d3">Feb 2022 – Mar 2023</span></div><ul>
+<li data-i18n="h1">Developed Telegram bots and web apps for outsourcing clients.</li>
+<li data-i18n="h2">Kept performance up with thousands of simultaneous users using asynchronous Python.</li>
+<li data-i18n="h3">Containerized apps with Docker; deployed to Yandex Cloud VMs and serverless functions.</li></ul></div></section>
+
+<section id="skills"><h2 data-i18n="n_skills">Skills</h2><div class="grid">
+<div class="card"><h3 data-i18n="s1">Languages</h3><div class="tags"><span>Go</span><span>Python</span><span>Bash</span></div></div>
+<div class="card"><h3 data-i18n="s2">Libraries</h3><div class="tags"><span>Gin</span><span>Gorilla</span><span>bun</span><span>uber-go/fx</span><span>FastAPI</span><span>Aiogram</span><span>asyncio</span><span>SQLAlchemy</span></div></div>
+<div class="card"><h3 data-i18n="s3">Data &amp; messaging</h3><div class="tags"><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>DragonflyDB</span><span>OpenSearch</span><span>Redpanda</span><span>Temporal</span></div></div>
+<div class="card"><h3 data-i18n="s4">Infrastructure</h3><div class="tags"><span>Docker</span><span>Kubernetes</span><span>Argo CD</span><span>Nginx</span><span>gRPC</span><span>raft</span><span>GitHub Actions</span><span>Yandex Cloud</span></div></div>
+</div></section>
+
+<section id="projects"><h2 data-i18n="n_proj">Projects</h2><div class="grid">
+<div class="card"><h3 data-i18n="p1t">University schedule &amp; assignments bot</h3><p data-i18n="p1">Telegram bot showing my class schedule (upper/lower weeks), tracking assignments per course with due dates, and sending reminders. Python, long polling, inline keyboards.</p></div>
+<div class="card"><h3 data-i18n="p2t">Winner — Digital Breakthrough Hackathon 2022</h3><p data-i18n="p2">Tomsk. Built an async web server on FastAPI + Uvicorn, deployed ML prediction models, set up autotests with GitHub Actions.</p></div>
+</div></section>
+
+<section id="edu"><h2 data-i18n="n_edu">Education</h2>
+<div class="job"><div class="jh"><h3 data-i18n="e1t">MSc, Artificial Intelligence &amp; NLP · NUST MISiS</h3><span data-i18n="e1d">2025 – present</span></div></div>
+<div class="job"><div class="jh"><h3 data-i18n="e2t">BSc, Information Systems &amp; Technologies · NUST MISiS</h3><span>2024</span></div>
+<p style="margin:8px 0 0;color:var(--mut)" data-i18n="e2">Coursework: Bézier curves, web development, machine learning, design patterns, distributed systems.</p></div></section>
+
+<section id="contact"><h2 data-i18n="n_contact">Contact</h2>
+<p data-i18n="ct">Open to middle+ backend roles (Go / Python), Moscow or remote. The fastest way to reach me is email or Telegram.</p>
+<div class="cta"><a class="btn pri" href="mailto:ikiselewsk@yandex.ru">ikiselewsk@yandex.ru</a><a class="btn" href="https://t.me/">Telegram</a><a class="btn" href="https://github.com/ikiselewskii">GitHub</a><a class="btn" href="https://linkedin.com/in/ilya-kiselewski">LinkedIn</a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Ilya Kiselewski</div></footer>
+<script>
+const RU={name:"Илья Киселевский",n_about:"Обо мне",n_exp:"Опыт",n_skills:"Навыки",n_proj:"Проекты",n_contact:"Контакты",n_edu:"Образование",c_tg:"Telegram",c_cv:"Скачать CV",
+pitch:"Делаю highload-бэкенды и распределённые системы — от маркетплейса на десятки тысяч RPS до S3-совместимого хранилища на raft.",
+about:"Бэкенд-разработчик, в основном на Go и Python. В Lofty с нуля за два месяца написал MVP маркетплейса и масштабировал его до highload-системы с event sourcing и десятком микросервисов; в Cloud.ru работал над S3-совместимым распределённым хранилищем. Сейчас учусь в магистратуре НИТУ МИСиС по ИИ и NLP. Москва · английский C2 · испанский B1.",
+d1:"авг 2024 – окт 2025",d2:"апр 2023 – дек 2023",d3:"фев 2022 – мар 2023",
+l1:"С нуля за два месяца в сжатые сроки написал на Go MVP B2C-маркетплейса цифровых товаров (ключи Steam, игровая валюта) на MongoDB и Redis.",
+l2:"Масштабировал его до highload-системы на десятки тысяч RPS: Temporal, DragonflyDB, PostgreSQL, OpenSearch, Redpanda; внедрил event sourcing, надёжные бизнес-процессы и около десятка микросервисов.",
+l3:"Принимал ключевые решения в архитектурных обсуждениях по продукту и производительности, прорабатывал фичи с Product Owner.",
+l4:"Поддерживал legacy-проекты и переносил докеризованные приложения в Kubernetes.",
+c1:"Разработал систему агрегации логов HTTP-запросов для S3-совместимого распределённого хранилища на Go.",
+c2:"Использовал gRPC для обмена данными между сервисами в распределённой системе на raft.",
+c3:"Реализовывал HTTP-обработчики S3 API по TDD.",
+c4:"Исправлял несоответствия в ответах API для совместимости со спецификацией S3.",
+h1:"Разрабатывал Telegram-ботов и веб-приложения для заказчиков на аутсорсе.",
+h2:"Обеспечивал производительность при тысячах одновременных пользователей за счёт асинхронного Python.",
+h3:"Упаковывал приложения в Docker, деплоил в Yandex Cloud на виртуальные машины и serverless-функции.",
+s1:"Языки",s2:"Библиотеки",s3:"Данные и очереди",s4:"Инфраструктура",
+p1t:"Бот расписания и заданий",p1:"Telegram-бот с расписанием пар (верхняя/нижняя неделя), учётом заданий по курсам с дедлайнами и напоминаниями. Python, long polling, inline-клавиатуры.",
+p2t:"Победитель хакатона «Цифровой прорыв» 2022",p2:"Томск. Асинхронный веб-сервер на FastAPI + Uvicorn, деплой ML-моделей, автотесты в GitHub Actions.",
+e1t:"Магистратура, ИИ и NLP · НИТУ МИСиС",e1d:"2025 – наст. время",e2t:"Бакалавриат, Информационные системы и технологии · НИТУ МИСиС",
+e2:"Курсы: кривые Безье, веб-разработка, машинное обучение, паттерны проектирования, распределённые системы.",
+ct:"Открыт к позициям middle+ backend (Go / Python), Москва или удалённо. Быстрее всего — email или Telegram."};
+const els=[...document.querySelectorAll("[data-i18n]")];els.forEach(e=>e.dataset.en=e.innerHTML);
+const btn=document.getElementById("lang");
+function set(l){els.forEach(e=>{const k=e.dataset.i18n;e.innerHTML=l==="ru"&&RU[k]?RU[k]:e.dataset.en});document.documentElement.lang=l;btn.textContent=l==="ru"?"EN":"RU";localStorage.setItem("lang",l)}
+btn.onclick=()=>set(document.documentElement.lang==="ru"?"en":"ru");
+set(localStorage.getItem("lang")||(new URLSearchParams(location.search).get("lang"))||"en");
+</script>
+</body></html>
